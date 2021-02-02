@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &103440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499316}
+  - 114: {fileID: 11438138}
+  - 114: {fileID: 11484130}
+  m_Layer: 0
+  m_Name: PlayMaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499316
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.33335876, y: 0.16100001, z: 0.339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11438138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b0d0c7c14280647983b6c5d5f6520f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fCameraWeapon: {fileID: 0}
+  fCameraChase: {fileID: 0}
+  fCameraOrbital: {fileID: 0}
+--- !u!114 &11484130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b72cd74859e37419bb025bec554d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fMaxCollidables: 30
+  fRadiusCorrection: 0.6
+  fCollidable1Prefab: {fileID: 184732, guid: d4b28d31c39679947b0718b50b21a9cb, type: 2}
+  fCollidable2Prefab: {fileID: 182076, guid: 6a5533d0f3db67a4094e2da07f4d0517, type: 2}
+  fCollidable3Prefab: {fileID: 168450, guid: 214b8e927187f244fac572fef1f5a1fd, type: 2}
+  fInitialSpawnCount: 10
+  fSpawnCycle: 30
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 103440}
+  m_IsPrefabParent: 1
